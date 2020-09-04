@@ -3,10 +3,7 @@
 # Disclaimer: This code is under the MIT license, whose details can be found at
 # the root in the LICENSE file
 #
-# -*- coding: utf-8 -*-
 """Executed when aacgmv2 is invoked with python -m aacgmv2"""
-
-from __future__ import division, print_function, absolute_import
 
 import argparse
 import datetime as dt

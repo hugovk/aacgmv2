@@ -14,7 +14,6 @@ Laundal, K. M. and A. D. Richmond (2016), Magnetic Coordinate Systems, Space
 
 """
 
-from __future__ import division, absolute_import, unicode_literals
 import datetime as dt
 import numpy as np
 import warnings
@@ -166,7 +165,7 @@ def igrf_dipole_axis(date):
     year = year + doy / year_days
 
     # read the IGRF coefficients
-    with open(aacgmv2.IGRF_COEFFS, 'r') as f_igrf:
+    with open(aacgmv2.IGRF_COEFFS) as f_igrf:
         lines = f_igrf.readlines()
 
     years = lines[3].split()[3:][:-1]
